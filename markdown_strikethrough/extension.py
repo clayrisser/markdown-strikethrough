@@ -19,7 +19,9 @@ class StrikethroughPostprocessor(Postprocessor):
     pattern = re.compile(r'~~(((?!~~).)+)~~')
 
     def run(self, html):
-        return re.sub(self.pattern, self.convert, html)
+        result = re.sub(self.pattern, self.convert, html)
+        print(result)
+        return result
 
     def convert(self, match):
-        return '-----------'
+        return '<del>' + match.group(1) + '</del>'

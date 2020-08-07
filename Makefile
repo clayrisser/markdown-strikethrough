@@ -31,6 +31,7 @@ format:
 env:
 	@virtualenv env
 	@env/bin/pip3 install -r ./requirements.txt
+	@env/bin/pip3 install -r ./dev-requirements.txt
 
 .PHONY: build
 build: dist

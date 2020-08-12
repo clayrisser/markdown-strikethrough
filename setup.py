@@ -14,7 +14,7 @@ with open(path.join(here, 'requirements.txt'), 'r', encoding='utf-8') as f:
 
 setup(
     name='markdown-strikethrough',
-    version='0.1.1',
+    version='0.1.2',
     description='support strikethrough in markdown',
     long_description=long_description,
     long_description_content_type='text/markdown',
